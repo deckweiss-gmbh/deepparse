@@ -80,6 +80,7 @@ def main():
             "pandas==2.0.3",
             "urllib3",
             "cloudpathlib[s3, gs, azure]",
+            "scipy==1.11.0"
         ],
         python_requires=">=3.8",
         description="A library for parsing multinational street addresses using deep learning.",

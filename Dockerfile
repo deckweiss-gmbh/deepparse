@@ -49,3 +49,5 @@ COPY setup.py ./
 COPY README.md ./
 COPY version.txt ./
 RUN pip install -e .[app]
+
+RUN sed -i 's|https://nlp.h-its.org/bpemb/|https://bpemb.h-its.org/multi/|g' /usr/local/lib/python3.11/site-packages/bpemb/bpemb.py
